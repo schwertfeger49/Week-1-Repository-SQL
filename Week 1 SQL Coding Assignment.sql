@@ -1,0 +1,10 @@
+SELECT * FROM employees WHERE birth_date < ‘1965-01-01’;
+SELECT * FROM employees WHERE gender = ‘F’;
+SELECT first_name, last_name FROM employees WHERE last_name LIKE ‘F%’ limit 50;
+INSERT INTO employees VALUES (100, ‘1990-06-06’, ‘Parker’, ‘Carman’, ‘M’, ‘2020-02-02’);
+INSERT INTO employees VALUES (101, ‘1990-07-07’, ‘Ray’, ‘Diator’, ‘M’, ‘2020-03-03’);
+INSERT INTO employees VALUES (102, ‘1990-08-08’, ‘Tina’, ‘Faygo’, ‘F’, ‘2020-04-04’);
+UPDATE employees SET first_name = ‘Bob’ WHERE emp_no = 10023;
+UPDATE employees SET hire_date = ‘2002-01-01’ WHERE first_name = ‘P%’ OR last_name = ‘P%’;
+DELETE FROM employees WHERE emp_no < 10000;
+DELETE FROM employees WHERE emp_no IN (10048, 10099, 10234, 20089);
